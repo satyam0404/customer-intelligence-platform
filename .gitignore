@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Data (raw big files if any, processed cached)
+data/raw/*.csv
+data/processed/*.parquet
+!data/raw/sample_ecommerce_data.csv
+
+# Reports
+reports/*.pdf
+reports/*.html
+!reports/sample_executive_summary.html
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
