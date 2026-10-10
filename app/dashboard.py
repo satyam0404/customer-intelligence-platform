@@ -77,7 +77,7 @@ def load_all_data():
         trans_df = pd.read_csv(raw_path)
     else:
         # Generate on the fly if needed
-        from src.data_loader import generate_synthetic_data, clean_and_preprocess_data
+        from src.pipeline import generate_synthetic_data, clean_and_preprocess_data
         raw = generate_synthetic_data()
         trans_df = clean_and_preprocess_data(raw)
 
@@ -88,7 +88,7 @@ def load_all_data():
     if rfm_path.exists():
         rfm_df = pd.read_csv(rfm_path)
     else:
-        from src.rfm_analysis import compute_rfm_metrics, score_rfm_quintiles, map_rfm_segments
+        from src.pipeline import compute_rfm_metrics, score_rfm_quintiles, map_rfm_segments
         rfm_df = map_rfm_segments(score_rfm_quintiles(compute_rfm_metrics(trans_df)))
 
     # Churn
@@ -96,7 +96,7 @@ def load_all_data():
     if churn_path.exists():
         churn_df = pd.read_csv(churn_path)
     else:
-        from src.churn_model import engineer_churn_features, train_and_evaluate_models
+        from src.pipeline import engineer_churn_features, train_and_evaluate_models
         _, churn_df = train_and_evaluate_models(engineer_churn_features(trans_df))
 
     # Market Basket
@@ -104,7 +104,7 @@ def load_all_data():
     if rules_path.exists():
         rules_df = pd.read_csv(rules_path)
     else:
-        from src.basket_analysis import extract_transaction_baskets, generate_association_rules
+        from src.pipeline import extract_transaction_baskets, generate_association_rules
         baskets = extract_transaction_baskets(trans_df)
         rules_df = generate_association_rules(baskets)
 
@@ -113,7 +113,7 @@ def load_all_data():
     if clv_path.exists():
         clv_df = pd.read_csv(clv_path)
     else:
-        from src.clv_calculator import calculate_customer_lifetime_value
+        from src.pipeline import calculate_customer_lifetime_value
         clv_df = calculate_customer_lifetime_value(rfm_df, churn_df)
 
     return trans_df, rfm_df, churn_df, rules_df, clv_df

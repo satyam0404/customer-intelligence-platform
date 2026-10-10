@@ -1,11 +1,7 @@
 Antecedent,Consequent,Support,Confidence,Lift,Conviction,PairCount
-Organic Fair-Trade Coffee Beans (1kg),Ceramic Pour-Over Coffee Maker,0.0803,0.5332,2.53,1.691,289
-Ceramic Pour-Over Coffee Maker,Organic Fair-Trade Coffee Beans (1kg),0.0803,0.3808,2.53,1.372,289
-Yoga Mat with Alignment Lines,Adjustable Dumbbell Set,0.0769,0.5055,2.521,1.617,277
-Adjustable Dumbbell Set,Yoga Mat with Alignment Lines,0.0769,0.3837,2.521,1.376,277
-Mechanical Gaming Keyboard,Fast-Charging USB-C Cable (2m),0.078,0.5128,2.459,1.624,281
-Fast-Charging USB-C Cable (2m),Mechanical Gaming Keyboard,0.078,0.3742,2.459,1.355,281
-Ergonomic Office Chair,Whey Protein Isolate (2kg),0.023,0.164,1.096,1.017,83
-Whey Protein Isolate (2kg),Ergonomic Office Chair,0.023,0.154,1.096,1.016,83
-Electric Gooseneck Kettle,Whey Protein Isolate (2kg),0.0222,0.155,1.036,1.006,80
-Compact Bamboo Desk Organizer,Non-Stick Ceramic Frying Pan,0.0217,0.1554,1.032,1.006,78
+Organic Fair-Trade Coffee Beans (1kg),Ceramic Pour-Over Coffee Maker,0.0789,0.528,2.482,1.668,981
+Ceramic Pour-Over Coffee Maker,Organic Fair-Trade Coffee Beans (1kg),0.0789,0.3709,2.482,1.352,981
+Mechanical Gaming Keyboard,Fast-Charging USB-C Cable (2m),0.073,0.4992,2.451,1.59,908
+Fast-Charging USB-C Cable (2m),Mechanical Gaming Keyboard,0.073,0.3586,2.451,1.331,908
+Yoga Mat with Alignment Lines,Adjustable Dumbbell Set,0.0767,0.5056,2.406,1.598,953
+Adjustable Dumbbell Set,Yoga Mat with Alignment Lines,0.0767,0.3649,2.406,1.336,953
