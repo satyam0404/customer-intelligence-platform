@@ -90,18 +90,10 @@ customer-intelligence-platform/
 │   └── executive_summary.html   # Standalone compiled executive report
 ├── src/
 │   ├── __init__.py
-│   ├── data_loader.py           # Ingestion, synthetic generation & cleaning
-│   ├── rfm_analysis.py          # RFM scoring and K-Means segmentation
-│   ├── churn_model.py           # ML churn classification and risk scoring
-│   ├── basket_analysis.py       # Market basket rules & bundle recommendations
-│   ├── clv_calculator.py        # Discounted lifetime value calculations
-│   └── report_generator.py      # Automated executive report compiler
+│   └── pipeline.py              # Consolidated main pipeline logic
 ├── tests/
-│   ├── test_data_loader.py
-│   ├── test_rfm.py
-│   ├── test_churn.py
-│   ├── test_basket.py
-│   └── test_clv.py
+│   ├── __init__.py
+│   └── test_pipeline.py         # Consolidated test suite
 ├── .gitignore
 ├── LICENSE
 ├── pyproject.toml
@@ -136,12 +128,7 @@ pip install -r requirements.txt
 Execute the full analytics and machine learning pipeline with a single command:
 
 ```bash
-python -m src.data_loader --generate-sample
-python -m src.rfm_analysis
-python -m src.churn_model
-python -m src.basket_analysis
-python -m src.clv_calculator
-python -m src.report_generator
+python -m src.pipeline
 ```
 
 ### 4. Launch the Interactive Dashboard

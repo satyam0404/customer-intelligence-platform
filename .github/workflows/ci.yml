@@ -34,9 +34,4 @@ jobs:
 
     - name: Validate Pipeline Execution
       run: |
-        python -m src.data_loader --generate-sample
-        python -m src.rfm_analysis
-        python -m src.churn_model
-        python -m src.basket_analysis
-        python -m src.clv_calculator
-        python -m src.report_generator
+        python -m src.pipeline --generate-sample
