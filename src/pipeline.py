@@ -523,7 +523,6 @@ def generate_executive_html_report(transactions_df: pd.DataFrame, rfm_df: pd.Dat
 
 def main():
     import argparse
-    import pandas as pd
     from pathlib import Path
     import logging
 
